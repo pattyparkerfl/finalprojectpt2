@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+	<!--link for style sheet-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<!-- For this to work on mobile, need initial scaling of 1.0 -->
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	
+	<meta charset="utf-8">
+	<title>The Periodic Table</title>
+	
+	<!--javascript functions-->
+	<script>
+		/*families of the periodic table*/
+		/*function to display info about alkali metals when user clicks column on periodic table*/
+		function alkaliLesson() {
+			document.getElementById("contentHead").innerHTML = "The Alkali Metals";
+        	document.getElementById("content").innerHTML = "Alkali Metals are in group 1/(IA) and are very reactive. They do not exist in nature on their own. Why? All elements in this group have only 1 valence electron and they lose it easily to non-metals. They form +1 cations. Alkali metals are shiny and soft. Like all metals they conduct electricity and are malleable. The picture below is of a sample of sodium.";
+			document.getElementById('familypic').src="images/sodium.jpg";
+			         		}
+		/*function to display info about alkaline earth metals when user clicks column on periodic table*/
+		function earthLesson() {
+			document.getElementById("contentHead").innerHTML = "The Alkaline Earth Metals";
+        	document.getElementById("content").innerHTML = "Alkaline Earth Metals are in group 2/(IIA) and also very reactive and not found free in nature, though less so than alkali metals. All elements in this group have 2 valence electrons and form +2 cations. Alkaline earth metals are soft and have a gray-white luster and like all metals conduct electricity. The picture below is a sample of calcium";
+			document.getElementById('familypic').src="images/calcium.jpg";
+			         		}
+		/*function to display info about transition metals when user clicks column on periodic table*/
+		function transitionLesson() {
+			document.getElementById("contentHead").innerHTML = "The Transitions Metals";
+        	document.getElementById("content").innerHTML = "Transition Metals are groups 3-12 (IB-VIIIB). They are very stable and some like gold and silver are generally unreactive. The number of valence electrons varies with some forming multiple ions. For example, copper can form +2 and +4 cations depending on who it is reacting with. Unlike alkali and alkaline earth metals transition metals are all hard. Like all metals transition metals all conduct electricity and are malleable. Exceptions to rules in chemistry will usually be with this group. The picture below is a sample of copper ore. ";
+			document.getElementById('familypic').src="images/copper.jpg";
+         		}
+		/*function to display info about halogens when user clicks column on periodic table*/
+		function halogenLesson() {
+			document.getElementById("contentHead").innerHTML = "The Halogens";
+        	document.getElementById("content").innerHTML = "The halogens are group 17/VIIA. They are non-metals and all except bromine(liquid) are gases at room temperature. They have 7 valence electrons and form -1 anions. Halogens are very reactive as they easily grab electrons from metals. They do not exist in nature on their own and are all toxic. The picture below is of chlorine gas";
+			document.getElementById('familypic').src="images/chlorine.jpg";
+         		}
+		/*function to display info about noble gases when user clicks column on periodic table*/
+		function nobleLesson() {
+			document.getElementById("contentHead").innerHTML = "The Noble Gases";
+        	document.getElementById("content").innerHTML = "Everybody wants to be like a noble gas. They are in group 18/8A. They have a full shell of 8 valence electrons and do not react with other elements. They do not form ions. They are odorless, colorless, and non-flammable. Neon will produce bright colors by exciting the electrons.";
+			document.getElementById('familypic').src="images/neon.jpg";
+         		}
+		/*function to display info about lathnides when user clicks column on periodic table*/
+		function lanthanideLesson() {
+			document.getElementById("contentHead").innerHTML = "The Lanthanides";
+        	document.getElementById("content").innerHTML = "One of the inner transition metals. They are called inner transition because their proper place on the table is between baruim and halfnium, atomic numbers 57-71. They are displayed at the bottom of the table because their proper placement makes the table wonky. They have 1 valence electron but can form multiple cations. They are named after and share properties with lanthanum. They are reactive silvery metals. The picture below is of a sample of lanthanum.";
+			document.getElementById('familypic').src="images/lanthanum.jpg";
+         		}
+		/*function to display info about actnides when user clicks column on periodic table*/
+		function actinideLesson() {
+			document.getElementById("contentHead").innerHTML = "The Actinides";
+        	document.getElementById("content").innerHTML = "One of the inner transition metals. Their proper place on the table is between radium and rutherfordium, atomic numbers 89-103. They are all radioactive and from atomic number 93 on, man made. The picture below is of a sample of uranium ore.";
+			document.getElementById('familypic').src="images/uranium.jpg";
+         		}
+		
+		/*trends of the periodic table*/
+		/*function to display content- title, content, and image on button click-atomic radius*/
+  		function displayRadius() {
+			document.getElementById("contentHead").innerHTML = "Atomic Radius";
+        	document.getElementById("content").innerHTML = "Atomic radius is the size of the atom. The size of an atom INCREASES in any group as you go DOWN the column because the valence electrons are in energy levels farther from the nucleus. The size of an atom INCREASES in any period  as you go to the LEFT in any row because there is an increased nuclear (+) charge pulling e- in tighter.";
+         	document.getElementById('familypic').src="images/ptableRadius.jpg";
+			         		}
+		/*function to display content- title, content, and image on button click-ionization energy*/
+		function displayIons() {
+			document.getElementById("contentHead").innerHTML = "First Ionization Energy";
+        	document.getElementById("content").innerHTML = "Ionization Energy is the energy needed to REMOVE an electron from an atom, in kJ/mol. Ionization energy increases UP from the bottom of a group because the outermost electron is farther and farther from the nucleus in larger atoms, so it is more easily removed (needs less energy). Ionization energy increases to the right in a period because the nuclear charge(+) increases, increasing the attraction between electrons and protons.";
+         	document.getElementById('familypic').src="images/ptableElectro.jpg";
+					}
+		/*function to display content- title, content, and image on button click-electronegativity*/
+		function displayElectro() {
+			document.getElementById("contentHead").innerHTML = "Electronegativity";
+        	document.getElementById("content").innerHTML = "Electronegativity is the tendency of an atom to attract electrons. Noble gases do not have electronegativity values. Can you explain why? Chemical bonds are determined by electronegativity differences between the bonding partners. Electronegativity increases from bottom to TOP in a group and increases to the right in a period. Cations have lower electronegativity than anions.";
+         	document.getElementById('familypic').src="images/ptableElectro.jpg";
+					}
+		/*function to display content- title, content, and image on button click-boiling and melting point*/
+		function displayMelt() {
+			document.getElementById("contentHead").innerHTML = "Melting and Boiling Points";
+        	document.getElementById("content").innerHTML = "Boiling and melting points are a little more complicated. Boiling point and melting point depends on the strength of forces between the particles that make up the element. The general periodic trend is that they increase to the middle of the d block, and then decrease to the Noble Gases. The highest melting point is in the middle of the transition metals. There is no simple way to identify the trend when going down a column ";
+         	document.getElementById('familypic').src="images/ptableMB.jpg";
+					}
+		
+		/*who am i game */
+		/*game variables - array of elements for game, variable to accept user input, variable keeping track of round number and one to keep track of mistakes */
+		var element_symbol = ["Br", "Cr", "Sr", "Ga", "Si"];
+		var element;
+		var round = ["1", "2", "3", "4", "5"];
+		var mistakes = 0;
+       	
+		/*array of game images*/
+		var imgArray = new Array();
+
+		imgArray[0] = new Image();
+		imgArray[0].src = 'images/element1.png';
+
+		imgArray[1] = new Image();
+		imgArray[1].src = 'images/element2.png';
+
+		imgArray[2] = new Image();
+		imgArray[2].src = 'images/element3.png';
+
+		imgArray[3] = new Image();
+		imgArray[3].src = 'images/element4.png';
+
+		imgArray[4] = new Image();
+		imgArray[4].src = 'images/element5.png';
+
+		/*game play, if answer is correct next round begins, if it incorrect they keep guessing until correct and mistakes add up and get displayed*/
+		function playGame (){
+     
+			/*input variables and loop check variable*/
+    		var newElement = prompt("Use the clues to guess the element -Make sure you enter the symbol of the element correctly");
+    		var answer = false;
+		
+			/*loop to go to next round if correct and to guess again if incorrect*/
+    		for (i = 0; i < element_symbol.length; i = i + 1){
+				if (newElement == element_symbol[i]){
+            		answer = true;
+					i = i +1;
+            		alert("Grreat job! " + newElement+ " is correct. Begin Round " + round[i] + " by clicking the play game button");
+					document.getElementById("whoami").src = imgArray[i].src;
+            	}
+        	}
+        
+        	if ( answer == false){
+            	alert("Bummer! " + newElement + " is incorrect. Try again. Click the play game button");
+				mistakes = mistakes + 1;
+				document.getElementById("results").innerHTML = "You have made " + mistakes + " mistakes";
+             }
+    	}
+   	</script>
+</head>
+
+<body>
+		
+	<!--this is the top banner...logo, page title and navigation for desktop-->
+	<div class="topnav">
+		<img src="images/logo1.jpg" alt ="logo">
+		<img src="images/pageTitle1.jpg" alt ="periodic table">
+  		<div class="dropdown">
+    		<button class="dropbtn">MENU 
+      			<i class="fa fa-caret-down"></i>
+    		</button>
+    		<div class="dropdown-content">
+      			<a class="active" href="https://pattyparkerfl.github.io/week3/">Home</a>
+				<a href="https://pattyparkerfl.github.io/week5/">Quiz</a>
+ 				<a href="placeholder.html">Video Tutorials</a>
+				<a href="placeholder.html">Labs</a>
+    		</div>
+  		</div> 
+	</div>
+	
+	<!--this is the top banner...logo and navigation for tablet-->
+	<div class="navtab">
+  		<div class="dropdown">
+    		<button class="dropbtn">MENU 
+      			<i class="fa fa-caret-down"></i>
+    		</button>
+    		<div class="dropdown-content">
+      			<a class="active" href="https://pattyparkerfl.github.io/week3/">Home</a>
+				<a href="https://pattyparkerfl.github.io/week5/">Quiz</a>
+ 				<a href="placeholder.html">Video Tutorials</a>
+				<a href="placeholder.html">Labs</a>
+    		</div>
+  		</div> 
+		<img src="images/pageTitle1.jpg" align = "center" width ="50%" alt ="periodic table">
+		<img src="images/logo1.jpg" align = "right" width ="30%" alt ="logo">
+	</div>
+	
+	<!--this is the top banner...logo and navigation for mobile-->
+	<div class="navmobile">
+  		<div class="dropdown-content">
+      		<a class="active" href="https://pattyparkerfl.github.io/week3/">Home</a>
+			<a href="https://pattyparkerfl.github.io/week5/">Quiz</a>
+ 			<a href="placeholder.html">Video Tutorials</a>
+			<a href="placeholder.html">Labs</a>
+    	</div>
+  		<img src="images/pageTitle1.jpg" align = "center" width ="50%" alt ="periodic table">
+		<img src="images/logo1.jpg" align = "right" width ="30%" alt ="logo">
+	</div>
+	
+	<!--map of periodic table to create columns of clickable families-->
+	<div class ="pointer">
+		<map name="familymap">
+  			<area shape="rect" coords="20, 140, 70, 425" alt="alklai" onclick="alkaliLesson()">
+			<area shape="rect" coords="73, 140, 120, 425" alt="alklaline earth" onclick="earthLesson()">
+			<area shape="rect" coords="123, 240, 550, 425" alt="transition metals" onclick="transitionLesson()">
+			<area shape="rect" coords="730, 140, 780, 425" alt="halogens" onclick="halogenLesson()">
+			<area shape="rect" coords="783, 80, 825, 425" alt="noble gases" onclick="nobleLesson()">
+			<area shape="rect" coords="150, 460, 825, 500" alt="lanthanides" onclick="lanthanideLesson()">
+			<area shape="rect" coords="150, 520, 825, 570" alt="actinidess" onclick="actinideLesson()">
+		</map>
+	</div>
+	
+	<!--desktop and tablet container to hold buttons to get lessons on trends and clickable periodic table-->
+	<div class= "container-left">
+		<h2 style="color:white;">Select the different sections on the periodic table to learn about that family of elements.</h2>
+		
+		<!--display lesson image-->
+   		<img src = "images/families.png" id ="ptable" width ="100%" alt="Families" usemap="#familymap"><br><br>
+		<h2 style="color:white;">Select a periodic trend below to learn about that trend.</h2>
+  		
+		<!--buttons for trends-->
+		<input type="button" value = "atomic radius" onclick=  "displayRadius()" name="writeRadius"/>
+		<input type="button" value = "ionization energy" onclick= "displayIons()" name="writeIons"/>
+		<input type="button" value = "electronegativity" onclick= "displayElectro() " name="writeElectro"/>
+		<input type="button" value = "boiling/melting points" onclick= "displayMelt() " name="writeMelt"/>  	
+  	</div>
+	
+	<!--mobile container to hold buttons to get lessons on trends and periodic table --->
+	<div class= "container-leftM">
+		<!--display lesson image-->
+   		<h2 style="color:white;">Select a column on the periodic table to learn about that family of elements.</h2>
+		<img src = "images/ptable.JPG" id ="ptable1" width ="100%" alt ="ptable"><br><br>
+		<h2 style="color:white;">Select a periodic trend below to learn about that trend.</h2>
+  		<input type="button" value = "atomic radius" onclick=  "displayRadius()" name="writeRadius"/>
+		<input type="button" value = "ionization energy" onclick= "displayIons()" name="writeIons"/>
+		<input type="button" value = "electronegativity" onclick= "displayElectro() " name="writeElectro"/>
+		<input type="button" value = "boiling/melting points" onclick= "displayMelt() " name="writeMelt"/>  	
+  	</div> 
+	
+	<!--container to display lesson content on button click or table click-->
+	<div class= "container-topright">
+		<h3 id ="contentHead">Development of Periodic Table </h3>
+		<p id="content">In the early days of chemistry chemists largely worked alone and there was no universal or clear organization of elements. Scientists grouped the known elements either by atomic mass or by common properties. Dmitri Mendeleev felt that both atomic mass and propertes can be used to organize the elements. It is said he was inspired by the card game solitare in which the cards are arranged by suit and number. In 1869 Mendeleev published his periodic table of elements. The properties of the elements repeat in an orderly way from row to row of the table. This repeated pattern is an example of periodicity in the properties of elements. This is incredible as it allows you to know the properties of an element and how it will react with others based on its position in the periodic table. In fact, Mendeleev's table had many blank spots predicting the existence of elements that had not yet been discovered. We do not memorize the periodic table, we READ it. </p><br>
+		<img src = "images/back.png" id ="familypic" width ="65%" alt ="familypic"><br>
+	</div>
+	
+	<!--container to hold game play-->
+	<div class= "container-bottomright">
+		<h1> Lets'play a game</h1>
+		<p>Use the clues to guess the element -Make sure you enter the symbol of the element correctly</p>
+		<div class ="imgRight">
+			<img src = "images/element1.png" id = "whoami" width ="50%" alt ="who am i" > 
+		</div>
+		<input type="button" value = "Play Game" onclick= "playGame() " name="gameButton"/>
+		
+		<!--<button onclick="playGame()">Play Game</button><br>-->
+		<p id ="results">mistakes</p>
+	</div>
+	
+	<!--this is the footer-->
+	<div class="footer">
+		<img src="images/logo1Sm.jpg" alt = "logo">
+	</div>
+</body>
+</html>
